@@ -123,7 +123,7 @@ dbConn = sqlite3.connect('MovieLens.db')
 print_genStats(dbConn)
 
 while True:
-    userInput = input("Please enter a command (1-5, x to exit): ")
+    userInput = input("Enter a command (1: Search Movies, 2: View Movie Details, 3: Top Rated Movies, 4: Add Review, 5: Set/Update Tagline, x to exit): ")
     if userInput == '1':
        cmnd1(dbConn)
        
